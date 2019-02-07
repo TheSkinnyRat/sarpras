@@ -1,6 +1,6 @@
 <?php
 /**
- * CodeIgniter TEST
+ * CodeIgniter TEST TEST
  *
  * An open source application development framework for PHP
  *
