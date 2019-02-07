@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond $1 !^(index\.php|images|img|css|js|robots\.txt)
+RewriteCond $1 !^(index\.php|application/views/|robots\.txt|install|favicon\.ico|documents|assets)
+RewriteRule ^(.+)$ index.php/$1 [L]
+<IfModule mod_headers.c>
+Header add Cache-Control:  "no-store, no-cache, must-revalidate"
+</IfModule>
